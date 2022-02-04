@@ -18,9 +18,10 @@ function modelLoaded() {
     objectDetector.detect(img,gotResult);
 }
 function draw(){
-    image(img,0,0,640,420);
+   
 
    if (status != "") {
+        image(img,0,0,640,420);
        for(i=0; i<objects.length;i++){
        document.getElementById("status").innerHTML = "Status : object detected";
 
